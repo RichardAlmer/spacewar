@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            background-color: black;
+            border: 5px solid blue;
+            cursor: none;
+        }
+        #start{
+            width: 200px;
+            border: 5px solid rgb(0, 34, 255);
+            border-radius: 40px;
+            background-color: rgb(0, 136, 255);
+            text-align: center;
+            position: fixed;
+        }
+        #score{
+            margin: 5px 0 0 0;
+            display: none;
+        }
+        #points{
+            margin: 0;
+            display: none;
+        }
+        #gameStart{
+            margin: 15px 0 10px 0;
+            background-color: rgb(94, 255, 0);
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            outline: none;
+        }
+        #gameStart:hover{
+            background-color: rgba(94, 255, 0, 0.639);
+        }
+    </style>
+</head>
+<body>
+    <div id="start">
+        <h1 id="score">0</h1>
+        <h1 id="space">Space War</h1>
+        <p id="points">Ponits</p>
+        <input id="gameStart" type="button" value="Start Game"></input>
+    </div>
+    <canvas id="game" width="400" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
